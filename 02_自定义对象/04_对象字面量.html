@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    /* 创建一个对象
+    var obj=new Object()   */
+    
+    /* 使用对象字面量来创建 */
+   var obj={};
+   obj.name="猪八戒";
+   console.log(obj);
+   console.log(typeof obj)
+   console.log(obj.name);
+
+   /* 使用对象字面量，可以在创建对象时，直接指定对象中的属性
+   对象字面量的属性名引号可加可不加，建议不加，如果要使用一些特殊的，必须加引号
+   如果是最后的一个属性，不需要加逗号*/
+   var obj2={
+    name:"孙悟空",
+    age:28,
+    relationship:{name:"唐僧"}
+}
+    console.log(obj2);
+    console.log(obj2.relationship)
+    </script>
+</head>
+<body>
+    
+</body>
+<html>

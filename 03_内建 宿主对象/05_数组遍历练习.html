@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+function Person(name,age){
+     this.name=name;
+     this.age=age;
+   } 
+/* 修改Person原型的toString */
+Person.prototype.toString=function(){
+    return "Person[name="+this.name+",age="+this.age+"]";
+}
+var per1=new Person("孙悟空",18);
+var per2=new Person("猪八戒",28);
+var per3=new Person("唐三藏",12);
+var per4=new Person("沙悟净",38);
+var per5=new Person("白龙马",8);
+var per6=new Person("小龙女",16);
+
+/* 将这些对象放入一个数组中 */
+var perArr=[per1,per2,per3,per4,per5,per6];
+console.log(perArr);
+
+/* 创建一个函数，可以将perArr中的满18岁的Person提取出来，然后封装到一个新的数组中返回 */
+function getAdult(arr){
+    var adult=new Person();
+    for(var i=0;i<arr.length;i++){
+        if(arr[i].age>=18){
+            adult[i]=arr[i];
+        }
+    }
+    for(var i=0;i<arr.length;i++){
+        console.log(adult[i]);
+    }
+}
+getAdult(perArr);
+
+    </script>
+</head>
+<body>
+    
+</body>
+<html>
+
+
+

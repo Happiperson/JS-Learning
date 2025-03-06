@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    /* 调用函数时解析器时不会检查实参的类型
+    1.所以要注意，如果接收到非法的参数，要检查
+    2.调用函数时，不会看数量，多于实参不会被赋值
+    3.如果实参少于实参数，则对应实参的形参是undefined */
+    function sum(a,b){
+     console.log(a+b);
+    }
+    sum(1,2);
+    sum(1,2,3);
+    sum("Hello","World");
+    sum(1);
+
+    /* 返回值: 使用return可以结束整个函数
+       返回值可以是任意的数据类型，也可以是一个对象，也可以是函数 */
+    function sum1(a,b,c){
+        return a+b+c;
+    }
+    result=sum1(1,2,3);
+    console.log("result="+result)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+<html>

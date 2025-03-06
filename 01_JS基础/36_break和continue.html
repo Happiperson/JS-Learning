@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    /* break 只能用于循环和switch语句
+    break关键字，会立刻终止离他最近的那个循环 */
+    outer:
+    for(var i=0;i<5;i++){
+        console.log("@外层循环"+i)
+        for(var j=0;j<5;j++){
+            break outer;
+            console.log("内层循环"+j)
+        }
+    }
+    /* continue关键字可以用来跳过当次循环 */
+    for(var i=0;i<5;i++){
+        if(i==2){
+            continue;
+        }
+        console.log("啦"+i)
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+<html>

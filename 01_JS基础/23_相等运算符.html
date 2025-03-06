@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    /* 相等运算符== 
+        当时用==来比较两个值时，将自动类型转换再比较*/
+        console.log("1"==1)
+        console.log(null==0)
+
+        /* undefined 衍生自null
+        所以两者做相等判断时，会返回true */
+        console.log(undefined ==null)
+
+        /* NaN不和任何值相等，包括他本身 */
+        console.log(NaN ==NaN)
+
+        var b=NaN;
+        /* 判断b的值是否是NaN
+        console.log(b==NaN);
+        可以通过isNaN()函数来判断
+        */
+       console.log(isNaN(b))
+
+    /* 不相等:
+    不相等也会对变量进行自动的类型转换，如果转换后相等它也会返回false */
+    console.log(undefined !=null)
+
+    
+    /* === 全等  重点：它不会做自动的类型转换,判断值一样，类型不一样直接返回false */
+    console.log("1" ===1)
+
+    /* ！== 不全等 重点：它不会做自动的类型转换 如果两个值类型不同，直接返回true */
+    console.log(1 !=="1")
+    </script>
+</head>
+<body>
+
+</body>
+<html>

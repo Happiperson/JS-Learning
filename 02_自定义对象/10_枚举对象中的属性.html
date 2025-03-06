@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    /* 枚举对象中的属性
+    使用for...in语句
+    语法：
+    for(var 变量 in 对象){} 对象中有几个属性，循环体就会执行几次
+    每次执行时，会将对象中的一个属性的名字赋值给变量，可以利用这点去取值 */
+    var obj={
+        name:"猪八戒",
+        age:20,
+        address:"高老庄",
+        sayName:function(){
+            console.log("我是"+obj2.name);
+        }
+    };
+    for(var n in obj){
+        console.log(n)
+        console.log(obj[n]);    }
+    </script>
+</head>
+<body>
+    
+</body>
+<html>

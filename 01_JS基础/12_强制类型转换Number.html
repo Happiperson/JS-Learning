@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    /* 转换方式一：
+        使用Number()函数
+            字符串转成数字
+                1. 如果是纯数字的字符串，直接转
+                2. 非，转NaN
+                3. 如果字符串 空船 空格串 则转换为0
+            布尔值转数字
+               true 转1   false/ null 0
+               undefined 数字NaN
+
+        转换方式二:
+            -这种方式专门用来对付字符串
+            -parseInt
+    */
+   a="213px";
+   a=parseInt(a);
+   console.log(a)
+   console.log(typeof a)
+   /* parseInt 可以将字符串中的有效的整数内容取出来
+      然后转换为Number  有取整效果*/
+   
+      b="3.14159px"
+    b=parseFloat(b);
+    console.log(b)
+   console.log(typeof b)
+    /* parseFloat 搞小数 */
+
+    /* 如果对非String使用parse...
+    它会先将其转换成String */
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+<html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    
+    /* 
+    运算符也叫操作符
+      通过运算符可以对一个或多个值进行运算，并获取结果
+      比如：typeof就是运算符，可以来获得一个值的类型
+         
+
+
+    算术运算符
+      当对非Number类型的值进行运算时，会将这些值转换为Number
+      任何数与NaN做运算，结果都是NaN
+
+      +:  如果对两个字符串进行加法运算，则会做拼串
+          任何值与字符串做加法运算，都会先转换为字符串，再进行运算
+    */
+   var a = 123;
+   var result=typeof a;
+   console.log(typeof result) /* 它会以字符串的形式返回 */
+
+   result=true+1;
+   console.log(typeof result)
+
+   var b=true+"啦啦啦"
+   console.log(b)
+
+   b="true"+"啦啦啦"
+   console.log(b)
+
+   b=1-true;
+   console.log(b)
+
+   b=1-"true";
+   console.log(b)
+
+
+   /* 我们可以利用任何值与字符串相加都为字符串的特点，加一个空串，变字符串 */
+
+
+   /* 任何值做-* /都会自动转换成Number
+   我们可以利用这一特点做隐式的类型转换 -0 *1 /1  */
+   var d="123"
+   d=d-0;
+   console.log(d)
+
+    </script>
+</head>
+<body>
+    
+</body>
+<html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    //测试如下程序性能
+    //console.time("计时器的名字")可以用来开启一个计时器
+    //它需要一个标识
+    console.time("test");
+   /*  var num=+prompt("请输入1个数判断是不是质数");
+       通过Math.sqrt()
+   */
+   for(var i=2;i<=100;i++){
+    var flag=true;
+    for(var i=2;i<Math.sqrt(i);i++){
+        if(num%i==0){
+            flag=false;
+            document.write(i+"不是质数");
+            break;}
+        document.write(i+"是质数");
+        }
+    }
+   
+    
+  
+    
+
+//终止计时器
+//console.timeEnd()
+    console.timeEnd("test")
+    </script>
+</head>
+<body>
+    
+</body>
+<html>

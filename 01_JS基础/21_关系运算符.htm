@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    /* 对于非数值的会自动转换为数值
+    任何值和NaN做任何比较都是false
+    如果符号两侧都是字符串时，不会将其转换为数字进行比较
+    而是将其转换为为编码
+    */
+
+    var a=5>10;
+    console.log(a)
+
+    /* 比较两个字符串 时是一位一位进行比较的
+       如果两位一样，则比较下一位，所以借用它来对英语进行排序 */
+    var b="abc"<"abd"
+    console.log(b)
+    </script>
+</head>
+<body>
+    
+</body>
+<html>
